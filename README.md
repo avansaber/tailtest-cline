@@ -106,7 +106,7 @@ Same R1-R15 rule layer, same adversarial test mode, different host integration. 
 - **[tailtest-codex](https://github.com/avansaber/tailtest-codex)** -- Codex CLI plugin (hook-driven)
 - **[tailtest-cline](https://github.com/avansaber/tailtest-cline)** -- Cline plugin (MCP-driven; this repo)
 
-See [tailtest.com/comparison](https://tailtest.com/comparison) for a feature matrix.
+See [tailtest.com/demo/cline](https://tailtest.com/demo/cline) for a live walkthrough of this variant, or [tailtest.com/comparison](https://tailtest.com/comparison) for a feature matrix across all four.
 
 ## License
 
