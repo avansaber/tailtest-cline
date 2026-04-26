@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.1 -- 2026-04-26
+
+Packaging fix. v1.0.0 shipped a broken entry point (`tailtest-mcp` script crashed with `ModuleNotFoundError: No module named 'tailtest_mcp'` because the source directory was not laid out as a package matching the entry point name).
+
+**Restructure:** moved `mcp_server/src/{server.py, tools/, lib/, templates/}` into `mcp_server/src/tailtest_mcp/` so the package directory matches the wheel's package name. `pyproject.toml` `[tool.hatch.build.targets.wheel] packages` updated accordingly.
+
+**Dependency cleanup:** removed the `[server]` extra from `mcp[server]>=1.0.0` (the extra does not exist on `mcp` 1.27.0 and triggered a pip warning).
+
+**Test imports:** updated three test files (`test_classify_failures.py`, `test_pick_template.py`, `test_scenario_plan.py`) from `from tools.X` (sys.path hack) to `from tailtest_mcp.tools.X` (proper package import).
+
+No behavior or feature changes. 162 tests still green. Anyone who installed v1.0.0 should upgrade.
+
 ## v1.0.0 -- 2026-04-26
 
 Initial release.

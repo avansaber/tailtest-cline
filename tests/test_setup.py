@@ -2,22 +2,10 @@
 
 import json
 import os
-import sys
 
 import pytest
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(REPO_ROOT, "mcp_server", "src"))
-
-# Import via package path so the relative `from .. import __version__` resolves.
-import importlib.util
-
-# We import the underlying setup module via its absolute file path because
-# the relative import requires a parent package context. Adjust sys.path to
-# treat mcp_server/src as a package root.
-sys.path.insert(0, os.path.join(REPO_ROOT, "mcp_server"))
-import src as _src_pkg  # noqa: F401  -- ensures package context exists
-from src.tools.setup import setup, MEMORY_BANK_CORE_FILES  # type: ignore
+from tailtest_mcp.tools.setup import setup, MEMORY_BANK_CORE_FILES
 
 
 # ---------------------------------------------------------------------------

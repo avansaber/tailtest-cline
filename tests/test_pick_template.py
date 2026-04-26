@@ -1,14 +1,8 @@
 """V14.2 tests for tailtest_pick_template tool."""
 
-import os
-import sys
-
 import pytest
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(REPO_ROOT, "mcp_server", "src"))
-
-from tools.pick_template import (
+from tailtest_mcp.tools.pick_template import (
     pick_template,
     FRAMEWORK_TEMPLATES,
     LANGUAGE_BASELINES,

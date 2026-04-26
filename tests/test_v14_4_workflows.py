@@ -15,7 +15,7 @@ import pytest
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_WORKFLOWS = os.path.join(
-    REPO_ROOT, "mcp_server", "src", "templates", "workflows"
+    REPO_ROOT, "mcp_server", "src", "tailtest_mcp", "templates", "workflows"
 )
 
 
@@ -160,8 +160,7 @@ class TestReportWorkflow:
 
 class TestSetupCopiesAllWorkflows:
     def test_setup_writes_all_workflows(self, tmp_path):
-        sys.path.insert(0, os.path.join(REPO_ROOT, "mcp_server"))
-        from src.tools.setup import setup  # type: ignore
+        from tailtest_mcp.tools.setup import setup
 
         (tmp_path / "main.py").write_text("")
         result = setup(project_root=str(tmp_path))

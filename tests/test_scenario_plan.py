@@ -6,16 +6,11 @@ framework detection, baseline scenarios, test file path resolution.
 
 import json
 import os
-import sys
 import tempfile
 
 import pytest
 
-# Make the tools module importable
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(REPO_ROOT, "mcp_server", "src"))
-
-from tools.scenario_plan import (
+from tailtest_mcp.tools.scenario_plan import (
     scenario_plan,
     ADVERSARIAL_BY_DEPTH,
     SCENARIO_COUNT_BY_DEPTH,

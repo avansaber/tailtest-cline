@@ -8,4 +8,4 @@ Three-pillar architecture:
 See V14-cline.md plan in the private repo for full architecture.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
