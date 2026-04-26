@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.0 -- (target 2026-04-XX, awaiting V14.5 gate pass)
+## v1.0.0 -- 2026-04-26
 
 Initial release.
 

@@ -73,7 +73,7 @@ class TestV14ServerSkeleton:
         with open(init_path) as f:
             src = f.read()
         assert "__version__" in src
-        assert "1.0.0-rc1" in src
+        assert "1.0.0" in src
 
 
 class TestV14PyprojectMetadata:

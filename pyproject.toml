@@ -1,6 +1,6 @@
 [project]
 name = "tailtest-mcp"
-version = "1.0.0-rc1"
+version = "1.0.0"
 description = "Tailtest for Cline. MCP server + .clinerules pack + Memory Bank integration. Adversarial test generation across 8+ Cline-supported editors."
 readme = "README.md"
 license = { text = "MIT" }
