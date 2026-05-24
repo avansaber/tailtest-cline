@@ -1,12 +1,20 @@
-# tailtest-cline
+# tailtest-cline -- AI software testing for Cline (8+ editors)
 
-> You build. We cover. Across 8+ editors at once.
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://img.shields.io/badge/tests-162_passing-emerald)](https://github.com/avansaber/tailtest-cline)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue)](https://github.com/avansaber/tailtest-cline/releases/latest)
+[![MCP](https://img.shields.io/badge/MCP-tailtest_server-purple)](https://glama.ai/mcp/servers/avansaber/tailtest-cline)
+[![Editors](https://img.shields.io/badge/editors-8%2B_via_Cline-orange)](https://cline.bot)
 
-tailtest-cline is a [Cline](https://cline.bot) plugin that automatically generates and runs tests every time the agent edits a source file. Same R1-R15 rule layer as the other tailtest variants. Adversarial test mode (V13) shipped from day one.
+> You build. Claude builds. tailtest makes sure it works -- across 8+ editors at once.
+
+**tailtest-cline** is the open-source AI software testing layer for [Cline](https://cline.bot), the autonomous coding agent that runs across 8+ editors (VS Code, Cursor, JetBrains IDEs, Antigravity, Zed, Neovim, VSCodium, Windsurf, plus the Cline CLI). MCP-driven test generation: every time Cline edits a file, tailtest's MCP server picks up the change, generates production-shaped scenarios via the R1-R15 rule layer, runs them, and returns structured failure data to Cline. Adversarial mode (R15) included from day one.
+
+Open source (MIT), no telemetry, no SaaS account. Same R1-R15 rule layer + adversarial mode as the Claude Code, Cursor, and Codex CLI variants -- 1,234 plugin tests total across the four hosts.
+
+**[Read more on tailtest.com](https://www.tailtest.com/) · [Platform overview](https://www.tailtest.com/platform/) · [Agent-edit testing deep dive](https://www.tailtest.com/platform/agent-edits/) · [Cline docs](https://www.tailtest.com/docs/cline/)**
 
 **Cline reach:** VS Code, Cursor, JetBrains IDEs, Antigravity, Zed, Neovim, VSCodium, Windsurf, plus the Cline CLI. One plugin, eight-plus editors.
-
-**[Full documentation at tailtest.com/docs/cline](https://tailtest.com/docs/cline)**
 
 ## What's different from the other variants
 
